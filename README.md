@@ -21,14 +21,7 @@ cd ai-rag
 pip install -r requirements.txt
 
 # Set up environment
-cp .env.example .env
-# Edit .env with your Hugging Face token
-
-# Python example
-python example_usage.py
-
-# cli.py
-python -m ai_rag.cli https://en.wikipedia.org/wiki/Python_(programming_language) -i
+cp .env
 ```
 
 ## Quick Start
@@ -45,6 +38,16 @@ rag = RAG([
 # Query the system
 response = rag("Which language has better performance?")
 print(response)
+```
+
+## Run
+
+```bash
+# Python example
+python example_usage.py
+
+# cli.py
+python -m ai_rag.cli https://en.wikipedia.org/wiki/Python_(programming_language) -i
 ```
 
 ## Configuration
